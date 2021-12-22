@@ -93,7 +93,7 @@ run_classifiers <- function(y, L1.x, L2.x, mrp.L2.x, L2.unit, L2.reg,
   # Classifier 3: PCA
 
   # message if pca is TRUE but no level 2 variables or pc_names provided
-  if (isTRUE(pca) & !is.null(pca.L2.x)) {
+  if (isTRUE(pca) & is.null(pca.L2.x)) {
     message(paste0('PCA requires that L2.x variables are specified or alternatively',
                    ' that the pcs argument is specified.'))
   }
