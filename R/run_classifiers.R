@@ -23,7 +23,7 @@ run_classifiers <- function(y, L1.x, L2.x, mrp.L2.x, L2.unit, L2.reg,
                             gb.shrinkage, gb.n.trees.init,
                             gb.n.trees.increase, gb.n.trees.max,
                             gb.n.minobsinnode, svm.kernel,
-                            svm.gamma, svm.cost, ebma.tol, cores, verbose) {
+                            svm.L2.unit, svm.gamma, svm.cost, ebma.tol, cores, verbose) {
 
   # Classifier 1: Best Subset
   if (isTRUE(best.subset)) {
